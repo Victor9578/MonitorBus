@@ -12,6 +12,6 @@
 * 暂无...
 
 ## 鸣谢
-`MonitorBus`通过Android Studio，基于Kotlin开发完成，minsdk为28。测试使用HUAWEI WATCH3 使用成功，目前线路已经写死，如有需要，可自行定制。
+`MonitorBus`通过Android Studio，基于Kotlin开发完成，minsdk为28。测试使用HUAWEI WATCH3 成功，目前线路已经写死，如有需要，可自行定制。
 切记不要添加Google play的相关库，wear tool的好像也不行:(  
 终于游泳的时候能看实时公交信息啦！图标是让Google gemini生成的...(游泳的公交车🤣)
