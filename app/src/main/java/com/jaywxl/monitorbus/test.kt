@@ -1,6 +1,6 @@
 package com.jaywxl.monitorbus
 
-import com.jaywxl.monitorbus.api.ApiBus
+import com.jaywxl.monitorbus.api.apiBus
 
 
 fun main() {
@@ -19,7 +19,7 @@ fun main() {
 
 //     将 favoriteLine 中的线路和站点遍历，并请求数据
     val busInfoList = favoriteLines.map { (line, station) ->
-        ApiBus(line, station)  // 请求每个线路和站点对应的公交信息
+        apiBus(line, station)  // 请求每个线路和站点对应的公交信息
     }
     println(busInfoList)
 }

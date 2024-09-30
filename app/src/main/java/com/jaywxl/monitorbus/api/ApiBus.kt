@@ -8,7 +8,7 @@ import com.google.gson.JsonParser
 import okhttp3.Response
 
 
-fun ApiBus(lines: String, stations: String): JsonObject {
+fun apiBus(lines: String, stations: String): JsonObject {
     // 定义 key、lines 和 stations
     val key = "99cbc5f7101811806207794bb914ccad"
 
@@ -41,7 +41,7 @@ fun request(url: String): Response? {
     return client.newCall(request).execute()
 }
 
-fun getBusTripInfo(key: String, lines: String, stations: String): JsonObject? {
+private  fun getBusTripInfo(key: String, lines: String, stations: String): JsonObject? {
     // 构建 URL
     val url = "https://aisle.amap.com/ws/mapapi/realtimebus/linestation" +
             "?key=$key" +
@@ -127,7 +127,7 @@ fun getBusTripInfo(key: String, lines: String, stations: String): JsonObject? {
     return null
 }
 
-fun getBusInfo(key: String, lines: String, stations: String): JsonObject? {
+private fun getBusInfo(key: String, lines: String, stations: String): JsonObject? {
     val url = "https://aisle.amap.com/ws/mapapi/poi/newbus" +
             "?key=$key" +
             "&id=$lines"
